@@ -1,0 +1,5 @@
+{"id":1,"name":"alpha","score":98.5,"active":true,"group":"A"}
+{"id":2,"name":"bravo","score":76.2,"active":false,"group":"B"}
+{"id":3,"name":"charlie","score":88.0,"active":true,"group":"A"}
+{"id":4,"name":"delta","score":91.4,"active":true,"group":"B"}
+{"id":5,"name":"echo","score":69.0,"active":false,"group":"C"}

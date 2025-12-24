@@ -1,0 +1,6 @@
+id,name,score,active,group
+1,alpha,98.5,true,A
+2,bravo,76.2,false,B
+3,charlie,88.0,true,A
+4,delta,91.4,true,B
+5,echo,69.0,false,C
