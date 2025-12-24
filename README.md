@@ -3,13 +3,6 @@
 [中文说明](README.zh.md)
 [Changelog](CHANGELOG.md)
 
-<div align="center">
-
-[![Stars](https://img.shields.io/github/stars/chao5go/lakedrop?style=flat-square&labelColor=343b41)](https://github.com/chao5go/lakedrop/stargazers)
-[![Forks](https://img.shields.io/github/forks/chao5go/lakedrop?style=flat-square&labelColor=343b41)](https://github.com/chao5go/lakedrop/network/members)
-[![License](https://img.shields.io/github/license/chao5go/lakedrop?style=flat-square&labelColor=343b41)](https://github.com/chao5go/lakedrop/blob/main/LICENSE)
-
-</div>
 
 LakeDrop is a fast, local-first desktop data explorer for large files. Open Parquet/CSV/JSONL/Arrow/Excel, run SQL, and inspect results instantly.
 

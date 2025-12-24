@@ -2,13 +2,6 @@
 
 LakeDrop 是一款本地优先的桌面数据探查工具，用于快速打开大文件并通过 SQL 即时查询。
 
-<div align="center">
-
-[![Stars](https://img.shields.io/github/stars/chao5go/lakedrop?style=flat-square&labelColor=343b41)](https://github.com/chao5go/lakedrop/stargazers)
-[![Forks](https://img.shields.io/github/forks/chao5go/lakedrop?style=flat-square&labelColor=343b41)](https://github.com/chao5go/lakedrop/network/members)
-[![License](https://img.shields.io/github/license/chao5go/lakedrop?style=flat-square&labelColor=343b41)](https://github.com/chao5go/lakedrop/blob/main/LICENSE)
-
-</div>
 
 [更新日志](CHANGELOG.zh.md)
 
