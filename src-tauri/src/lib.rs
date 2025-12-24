@@ -523,9 +523,16 @@ fn resolve_sample_path(file_name: String, app: AppHandle) -> Result<String, Stri
         .path()
         .resource_dir()
         .map_err(|err: tauri::Error| err.to_string())?;
-    let resource_path = resource_dir.join("samples").join(&file_name);
-    if resource_path.exists() {
-        return Ok(resource_path.display().to_string());
+
+    let candidates = [
+        resource_dir.join("samples").join(&file_name),
+        resource_dir.join("resources").join("samples").join(&file_name),
+    ];
+
+    for candidate in candidates {
+        if candidate.exists() {
+            return Ok(candidate.display().to_string());
+        }
     }
 
     if let Ok(manifest_dir) = std::env::var("CARGO_MANIFEST_DIR") {
@@ -539,7 +546,10 @@ fn resolve_sample_path(file_name: String, app: AppHandle) -> Result<String, Stri
         }
     }
 
-    Err("Sample file not found".to_string())
+    Err(format!(
+        "Sample file not found. Looked under {}",
+        resource_dir.display()
+    ))
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]

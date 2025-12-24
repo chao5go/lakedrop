@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "build:samples": "cargo run --bin build_samples --manifest-path src-tauri/Cargo.toml",
+    "build:check": "pnpm build && cargo check --manifest-path src-tauri/Cargo.toml",
+    "build:all": "pnpm build:samples && pnpm tauri build --verbose"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
