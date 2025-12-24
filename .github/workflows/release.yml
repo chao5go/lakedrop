@@ -56,6 +56,9 @@ jobs:
             libappindicator3-dev \
             libasound2-dev \
             libglib2.0-dev \
+            libfuse2 \
+            desktop-file-utils \
+            file \
             patchelf
 
       - name: Install dependencies
